@@ -1,0 +1,18 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{@apply bg-ink text-slate-200 antialiased overflow-x-hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #60a5fa;outline-offset:2px}
+.card{transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(59,130,246,.6);box-shadow:0 12px 30px -12px rgba(59,130,246,.35)}
+.hero-bg{background-image:radial-gradient(rgba(148,163,184,.12) 1px,transparent 1px);background-size:24px 24px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.animate-float{animation:float 6s ease-in-out infinite}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.in{opacity:1;transform:none}
+@keyframes spin{to{transform:rotate(360deg)}}.orbit{animation:spin 28s linear infinite}.orbit-i{animation:spin 28s linear infinite reverse}
+@keyframes grad{to{background-position:200% center}}.animate-grad{animation:grad 6s linear infinite}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}.animate-fade{animation:fade .5s}
+@keyframes pulse2{50%{opacity:.25}}.pulse{animation:pulse2 1.6s ease-in-out infinite}
+@keyframes dashm{to{stroke-dashoffset:-14}}.dash{stroke-dasharray:4 3;animation:dashm 1s linear infinite}
+@keyframes drawl{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}.draw{stroke-dasharray:100;animation:drawl 3s ease-in-out infinite alternate}
+@keyframes scanm{from{transform:translateY(0)}to{transform:translateY(80px)}}.scan{animation:scanm 2.2s ease-in-out infinite alternate}
