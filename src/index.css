@@ -16,3 +16,4 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 @keyframes dashm{to{stroke-dashoffset:-14}}.dash{stroke-dasharray:4 3;animation:dashm 1s linear infinite}
 @keyframes drawl{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}.draw{stroke-dasharray:100;animation:drawl 3s ease-in-out infinite alternate}
 @keyframes scanm{from{transform:translateY(0)}to{transform:translateY(80px)}}.scan{animation:scanm 2.2s ease-in-out infinite alternate}
+@keyframes gb{from{transform:scaleY(.5)}to{transform:scaleY(1)}}.grow-bar{transform-origin:bottom;animation:gb 3s ease-in-out infinite alternate}
